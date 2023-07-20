@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CdkDrag, CdkDropList } from '@angular/cdk/drag-drop';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TeamsComponent } from './teams/teams.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CdkDrag, CdkDropList
   ],
   providers: [],
   bootstrap: [AppComponent]

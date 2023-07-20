@@ -1,0 +1,23 @@
+<div class="teams">
+    <div
+        class="team"
+        cdkDropList
+        #team1List="cdkDropList"
+        [cdkDropListData]="team1"
+        [cdkDropListConnectedTo]="[team2List]"
+        (cdkDropListDropped)="drop($event)"
+    >
+        <div class="player" cdkDrag *ngFor="let player of team1">{{ player }}</div>
+    </div>
+
+    <div
+        class="team"
+        cdkDropList
+        #team2List="cdkDropList"
+        [cdkDropListData]="team2"
+        [cdkDropListConnectedTo]="[team1List]"
+        (cdkDropListDropped)="drop($event)"
+    >
+        <div class="player" cdkDrag *ngFor="let player of team2">{{ player }}</div>
+    </div>
+</div>

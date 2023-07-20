@@ -1,0 +1,21 @@
+.teams {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.team {
+    flex: 1;
+    border: 1px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.player {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
